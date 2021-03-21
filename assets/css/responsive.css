@@ -1,0 +1,469 @@
+/*
+========================= Table of content ==========================
+
+2.Header
+3.Slide
+4.Block
+5.About me section
+6.Count number section
+7.List icon section
+8.Blog section
+9.Slide course section
+10.Story  section
+11.Story
+12.Contact
+13.Feed back
+14.List logo
+15.Footer
+
+
+
+*/
+
+
+/* =============== 2. Header =============== */
+
+@media screen and (max-width:1100px) {
+    .header .header_bottom {
+        padding: 0 4rem;
+    }
+    .header .header_top {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .header .menu_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header_bottom .menu>.list_menu {
+        display: none;
+    }
+    .header_bottom .icon .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+    }
+    .header .header_bottom {
+        padding: 0;
+    }
+    .header .header_top {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header .header_top {
+        height: auto;
+        padding: 1.5rem 0;
+    }
+    .header .header_top .content {
+        display: block;
+        text-align: center;
+    }
+    .header .header_top .content .text {
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .header .header_logo {
+        padding: 0;
+    }
+    .header .header_logo .logo img {
+        width: 10rem;
+    }
+    .header .header_logo .action .link {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .header .header_top .content .text {
+        display: none;
+    }
+    .header .header_top .content .icon .list_link {
+        padding-left: 2rem;
+    }
+}
+
+
+/* ======================== 3. Slide ==================== */
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .slide {
+        height: 58vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .slide {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .slide {
+        height: 80vh;
+    }
+    .slide .slide_text {
+        padding-top: 11rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .slide {
+        height: 100vh;
+    }
+    .slide .slide_text {
+        padding-top: 10rem;
+    }
+}
+
+
+/* ======================== 4. Block  ==================== */
+
+@media screen and (max-width: 1199px) and (min-width:768px) {
+    .block .block_item:hover .block_image {
+        transform: translateY(-235px);
+    }
+    .block .block_item .block_text .desc {
+        height: 7rem;
+        overflow: hidden;
+    }
+    .block .block_item .block_text .link {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .block .row>[class*=col] {
+        padding: 2rem 0;
+    }
+    .block .block_item .block_text .desc {
+        height: 7rem;
+        overflow: hidden;
+    }
+    .block .block_item {
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, .2);
+    }
+    .block .block_item .block_image {
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 0rem;
+        left: 0;
+        opacity: 1;
+    }
+    .block .block_item .block_icon {
+        background: transparent;
+    }
+    .block .block_item:hover .block_image {
+        transform: translateY(0);
+    }
+    .block .block_item:hover .block_text .desc_icon_box {
+        margin-top: 0;
+        height: auto;
+        padding: 0rem 3rem 3rem 3rem;
+    }
+    .block .block_item:hover .block_icon {
+        transform: translateY(0);
+    }
+    .block .block_item .block_text .desc_icon_box {
+        height: auto;
+        padding: 0rem 3rem 3rem 3rem;
+        background: #fff;
+        margin-top: 0;
+    }
+    .block .block_item .block_text .desc {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 575px) {}
+
+
+/* ======================= 5. About me ===============*/
+
+@media screen and (max-width: 1200px) {
+    .about_me .image .image_video img {
+        max-width: 100%;
+        height: auto;
+    }
+    .about_me .image .image_type img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about_me .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .about_me {
+        padding: 5rem 0 2rem 0;
+    }
+}
+
+
+/* ======================== 6. Count_number section  ==================== */
+
+@media screen and (max-width: 767px) {
+    .count_number .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .count_number {
+        padding: 8rem 0 5rem 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .count_number {
+        padding: 5rem 0 2rem 0;
+    }
+}
+
+
+/* ======================== 7. List icon section  ==================== */
+
+@media screen and (max-width:767px) {
+    .list_icon .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .list_icon {
+        padding: 8rem 0 5rem 0;
+    }
+    .list_icon .content {
+        padding: 0 1.5rem;
+    }
+    .list_icon .content .title {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+}
+
+
+/* ======================== 8. Schedule section  ==================== */
+
+@media screen and (max-width: 1062px) {
+    .schedule .content .schedule_infomation .event .top_heading .meta .time {
+        padding-bottom: 1.5rem;
+    }
+    .schedule .content .schedule_infomation .event .top_heading .meta {
+        display: block;
+    }
+    .schedule .content .schedule_infomation .event .top_heading .meta .location {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .schedule .content {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .order_2 {
+        order: 2;
+    }
+    .order_1 {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .schedule .content .schedule_infomation {
+        padding: 4rem 2rem 4rem 2rem;
+    }
+    .schedule .content .schedule_infomation .event .time_from {
+        padding-right: 1.5rem;
+    }
+    .schedule .content .schedule_infomation .event .top_heading {
+        padding-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .schedule .content .schedule_image .timer .custom {
+        width: 6rem;
+        height: 6rem;
+        font-size: 2rem;
+    }
+    .schedule .content .schedule_image .timer .custom span {
+        font-size: 8px;
+    }
+}
+
+
+/* ======================== 9. Blog section ==================== */
+
+@media screen and (max-width: 991px) {
+    .blog .row>[class*=col-lg] {
+        padding-bottom: 4rem;
+    }
+    .blog {
+        padding: 5rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blog .content {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .blog .blog_item {
+        display: block;
+    }
+    .blog .blog_item .blog_text {
+        padding: 3rem 0 0 0;
+    }
+    .blog .content {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blog .image_type_video .image_text .time {
+        display: none;
+    }
+    .blog .image_type_video .image_text .title {
+        padding-bottom: 0;
+    }
+    .blog .image_type_video .image_text .title {
+        font-size: 1.6rem;
+        padding-right: 1rem;
+    }
+    .blog .image_type_video .icon_play .link.custom {
+        font-size: 1.6rem;
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+
+/* ======================== 10. Slide course section ==================== */
+
+@media screen and (max-width: 767px) {
+    .slide_course .content {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lastest_news .content {
+        padding-bottom: 3rem;
+    }
+    .lastest_news .text .title {
+        font-size: 4rem;
+    }
+    .lastest_news {
+        padding: 5rem 0 2rem 0;
+    }
+}
+
+
+/* ======================== 11. Story section ==================== */
+
+@media screen and (min-width: 1024px) {
+    .story #team .owl-nav.disabled+.owl-dots {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-top: 0;
+    }
+    .story #team .testimonial .text .desc {
+        max-width: 30rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1200px) {
+    .story #team .owl-nav.disabled+.owl-dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .story #team .owl-nav.disabled+.owl-dots {
+        margin-top: 5rem;
+    }
+    .story .content .story_title {
+        text-align: center;
+    }
+    .story #team .testimonial {
+        display: block;
+    }
+    .story #team .testimonial .image {
+        padding-bottom: 2rem;
+        margin-right: 0;
+    }
+    .story #team .testimonial .image img {
+        margin: auto;
+    }
+    .story #team .testimonial .text {
+        text-align: center;
+    }
+    .story #team .testimonial .text {
+        max-width: 50rem;
+        margin: auto;
+    }
+}
+
+
+/* ======================== 13. Feed back ==================== */
+
+@media screen and (max-width:767px) {
+    .feed_back .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .feed_back {
+        padding: 5rem 0 2rem 0;
+    }
+    @media screen and (max-width:575px) {
+        .feed_back .content {
+            padding: 0;
+        }
+    }
+}
+
+
+/* ======================== 14. List logo ==================== */
+
+
+/* ======================== 15. Footer ==================== */
+
+@media screen and (max-width:991px) {
+    .footer .footer_top .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .footer .footer_top {
+        padding-bottom: 2rem;
+    }
+    .footer .footer_bottom .content {
+        padding: 0 2rem;
+    }
+    .footer .footer_bottom .content {
+        display: block;
+        text-align: center;
+    }
+    .footer .footer_bottom .content .copyright {
+        padding-bottom: 2rem;
+        line-height: 1.5;
+    }
+    .footer .footer_bottom .content .list_menu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer .footer_bottom .content .list_menu .list_item .list_link {
+        line-height: 1.6;
+    }
+}
