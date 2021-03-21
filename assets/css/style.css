@@ -1,7 +1,5 @@
 /*
 ========================= Table of content ==========================
-/*
-========================= Table of content ==========================
 1.Reset css
 2.Header
 3.Slide
@@ -17,7 +15,6 @@
 13.Feed back
 14.List logo
 15.Footer
-16.Pre loader
 
 
 */
@@ -203,131 +200,6 @@ input {
 body {
     font-weight: 600;
     font-family: sans-serif;
-}
-
-
-/************************** 16.Pre-loader ****************/
-
-.preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #000;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    z-index: 99999;
-    display: flex;
-}
-
-.preloader .loader {
-    width: 20rem;
-    height: 20rem;
-    margin: auto;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.preloader .loader::before {
-    z-index: 1;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 18rem;
-    height: 18rem;
-    background: #000;
-    border-radius: 50%;
-}
-
-.preloader .loader .loader-box {
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-}
-
-.preloader .loader .loader-box:nth-child(1) {
-    top: 0;
-    left: 0;
-    background-color: yellow;
-    animation: lightMe1 3s linear infinite;
-}
-
-.preloader .loader .loader-box:nth-child(2) {
-    top: 0;
-    right: 0;
-    background-color: #05f8a1;
-    animation: lightMe2 3s linear infinite;
-}
-
-.preloader .loader .loader-box:nth-child(3) {
-    left: 0;
-    bottom: 0;
-    background-color: #FF512F;
-    animation: lightMe3 3s linear infinite;
-}
-
-.preloader .loader .loader-box:nth-child(4) {
-    background-color: #481ea7;
-    bottom: 0;
-    right: 0;
-    animation: lightMe4 3s linear infinite;
-}
-
-@keyframes lightMe1 {
-    0% {
-        opacity: 0.1;
-    }
-    25% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes lightMe2 {
-    0% {
-        opacity: 0.1;
-    }
-    25% {
-        opacity: 0.1;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes lightMe3 {
-    0% {
-        opacity: 0.1;
-    }
-    75% {
-        opacity: 0.1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes lightMe4 {
-    0% {
-        opacity: 0.1;
-    }
-    50% {
-        opacity: 0.1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 
