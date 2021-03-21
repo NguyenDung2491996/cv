@@ -1,19 +1,3 @@
-//PRE LOADER
-let preLoader = {
-    init: function() {
-        this.active();
-    },
-    active: function() {
-        setTimeout(() => {
-            const preLoader = document.querySelector(".preloader");
-            if (preLoader) {
-                preLoader.style.display = "none";
-            }
-        }, 3000);
-    }
-};
-preLoader.init();
-
 // SHOW MENU MOBILE
 var menuResponsive = {
     init: function() {
