@@ -295,12 +295,13 @@ body {
     position: relative;
 }
 
-#magic-line {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
+.line-effect{
+    position: fixed;
+    width: 0;
+    transition: all 0.25s;
+    background: #df4305;
     height: 2px;
-    background: #fe4902;
+    z-index: 11;
 }
 
 .header_bottom .content {
