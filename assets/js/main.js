@@ -1,4 +1,29 @@
-// SHOW MENU MOBILE
+// Handle hover link effect
+
+window.addEventListener('load', () => {
+  const linkList = document.querySelectorAll('.list_item>.list_link');
+  if (!linkList) return;
+  linkList.forEach((item) => {
+    item.addEventListener('mouseenter', handleHoverLink);
+  });
+  const line = document.createElement('div');
+  line.className = 'line-effect';
+  document.body.appendChild(line);
+  function handleHoverLink(event) {
+    const { left, top, width, height } = event.target.getBoundingClientRect();
+    line.style.width = `${width}px`;
+    line.style.left = `${left}px`;
+    const offsetBottom = 10;
+    line.style.top = `${top + height / 2 + offsetBottom}px`;
+  }
+  const menu = document.querySelector('.menu');
+  if (!menu) return;
+  menu.addEventListener('mouseleave', () => {
+    line.style.width = 0;
+  });
+});
+
+// Show menu mobile
 const menuResponsive = {
   init: function () {
     this.showMenu();
@@ -24,7 +49,7 @@ const menuResponsive = {
   },
 };
 menuResponsive.init();
-// SHOW SUB MENU MOBILE
+// Show sub menu mobile
 const subMenu = {
   init: function () {
     this.show_subMenu();
@@ -43,12 +68,14 @@ subMenu.init();
 // WINDOW SCROLL HIDE MENU
 
 var prevScrollpos = window.pageYOffset;
+
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
+  
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById('navbar').style.top = '54px';
+    document.querySelector('.main_header').style.top = '54px';
   } else {
-    document.getElementById('navbar').style.top = '-121px';
+    document.querySelector('.main_header').style.top = '-121px';
   }
   prevScrollpos = currentScrollPos;
 };
@@ -67,6 +94,7 @@ var selector = {
   },
 };
 selector.init();
+
 //NUMBER AUTO INCREASE WHEN SCROLL TO COUNT NUMBER SECTION
 jQuery(window).scroll(startCounter);
 
@@ -100,7 +128,6 @@ const SECONDS_PER_HOUR = 3600;
 const SECONDS_PER_MINUTE = 60;
 // COUNTDOWN TIMER
 function createTimer() {
-  //var endTime = new Date("29 April 2018 9:56:00 GMT+01:00 ");
   let endTime = new Date('1 Nov 2022 08:00:00 GMT+0000 ');
   endTime = Date.parse(endTime) / 1000;
 
@@ -108,7 +135,7 @@ function createTimer() {
   now = Date.parse(now) / 1000;
 
   let timeMaining = endTime - now;
-  console.log(timeMaining);
+
   let days = timeMaining >= SECONDS_PER_DAY ? Math.floor(timeMaining / SECONDS_PER_DAY) : 0;
   timeMaining -= days * SECONDS_PER_DAY;
 
@@ -203,29 +230,4 @@ $('#logo').owlCarousel({
       items: 6,
     },
   },
-});
-
-// Handle hover link effect
-
-window.addEventListener('load', () => {
-  const linkList = document.querySelectorAll('.list_item>.list_link');
-  if (!linkList) return;
-  linkList.forEach((item) => {
-    item.addEventListener('mouseenter', handleHoverLink);
-  });
-  const line = document.createElement('div');
-  line.className = 'line-effect';
-  document.body.appendChild(line);
-  function handleHoverLink(event) {
-    const { left, top, width, height } = event.target.getBoundingClientRect();
-    line.style.width = `${width}px`;
-    line.style.left = `${left}px`;
-    const offsetBottom = 10;
-    line.style.top = `${top + height / 2 + offsetBottom}px`;
-  }
-  const menu = document.querySelector('.menu');
-  if (!menu) return;
-  menu.addEventListener('mouseleave', () => {
-    line.style.width = 0;
-  });
 });
